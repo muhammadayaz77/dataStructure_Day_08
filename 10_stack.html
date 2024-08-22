@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Stack</title>
+</head>
+<body>
+    
+</body>
+<script> 
+
+    let data = []
+    let currSize = data.length;
+    let maxSize = 5;
+
+    function Push(newVal)
+    {
+        if(currSize>=maxSize)
+        {
+            alert('Stack is full')
+        }
+        else
+        {
+            data[currSize] = newVal
+            currSize++
+        }
+    }
+    function Pop(){
+        if(currSize>0)
+        {
+            currSize-=1;
+            data.length = currSize;
+        }
+        else 
+        {
+            alert('Stack is already empty')
+        }
+    }
+    Push(10)
+    console.log(data)
+    Push(10)
+    console.log(data)
+    Push(10)
+    console.log(data)
+    Push(10)
+    console.log(data)
+    Push(10)
+    console.log(data)
+    
+    Pop(10)
+    console.log(data)
+    Pop(10)
+    console.log(data)
+    Pop(10)
+    console.log(data)
+</script>
+</html>
